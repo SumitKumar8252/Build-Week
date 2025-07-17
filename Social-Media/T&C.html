@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T&C | Social Bee</title>
+  <link rel="stylesheet" href="./CSS/T&C.css" />
+  <link rel="shortcut icon" sizes="180x180" href="./image/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Terms & Conditions</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit... <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint impedit, commodi voluptate dolorem magnam modi! Repudiandae, vero soluta nisi sit, tempora atque nulla officiis, nemo eius assumenda dolores! Culpa obcaecati eos, dolore voluptate non, neque cum impedit sed delectus facere voluptatibus modi nihil, a consequuntur quo error mollitia consequatur assumenda consectetur adipisci? Id, quisquam rerum quae suscipit ducimus ratione enim provident aspernatur quasi, a possimus cupiditate, libero commodi in illo similique alias necessitatibus quos obcaecati magni! rnatur voluptates quo, enim obcaecati quidem nesciunt eligendi a aperiam natus quisquam cum voluptas porro expedita dolorum veritatis, sit neque esse accusamus voluptatibus libero. Sed, et non ipsa repellendus, totam architecto illum maxime, omnis vel itaque autem tempore! Laborum facere quam, minus officiis doloremque veritatis minima vel, impedit consequuntur sapiente magni aliquid inventore aperiam?
+      
+    </p>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="agree-tnc">
+      <label for="agree-tnc">I agree to the <a href="#" >Terms & Conditions</a>.</label>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="agree-privacy">
+      <label for="agree-privacy">I agree to the <a href="#" >Privacy Policy</a>.</label>
+    </div>
+
+    <button id="proceed-btn" disabled>Proceed</button>
+  </div>
+</body>
+
+<script>
+    const Checkbox = document.getElementById('agree-tnc');
+    const privacyCheckbox = document.getElementById('agree-privacy');
+    const proceedBtn = document.getElementById('proceed-btn');
+
+    function checkAgreement() {
+      if (Checkbox.checked && privacyCheckbox.checked) {
+        proceedBtn.disabled = false;
+        proceedBtn.classList.add('enabled');
+      } else {
+        proceedBtn.disabled = true;
+        proceedBtn.classList.remove('enabled');
+      }
+    }
+
+    Checkbox.addEventListener('change', checkAgreement);
+    privacyCheckbox.addEventListener('change', checkAgreement);
+
+    proceedBtn.addEventListener('click', () => {
+      // Redirect to the next page 
+      window.location.href = 'signup.html';
+    });
+  </script>
+
+</html>
