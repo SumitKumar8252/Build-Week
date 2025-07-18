@@ -49,9 +49,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
   //Logout
   if(logoutBtn){
     logoutBtn.addEventListener('click', async()=>{
-      console.log("clicked")
       await signOut(auth)
-      window.location.href="index.html"
+      window.location.href="index.html";
     })
   }
 })
