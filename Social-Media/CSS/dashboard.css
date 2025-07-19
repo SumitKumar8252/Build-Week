@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     background: var(--background-color);
     color: #212529;
@@ -83,6 +83,17 @@ body {
     background-color: var(--hover-color);
 }
 
+.news-btn{
+    border: 1px solid var(--button-nav);
+    background: var(--background-color);
+    width: 50px 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
 .profile-img {
     width: 40px;
     height: 40px;
@@ -131,8 +142,8 @@ body {
 }
 
 .sidebar {
-    width: 220px;
-    background: #f8ecfb; /* soft light purple */
+    width: 200px;
+    background: #f8ecfb; 
     border-right: 1px solid #d6bce4;
     padding: 1rem;
     height: calc(100vh - 64px);

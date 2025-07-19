@@ -8,9 +8,76 @@
     <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <h1>Profile</h1>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo-container">
+          <img src="../image/logo.png" alt="logo" class="logo" />
+        </div>
+        <a href="./HTML/create.html">📝Create</a>
+        <a href="./HTML/publish.html">📜Publish</a>
+        <a href="./HTML/Trending.html">🔥Trending</a>
+        <a href="./HTML/startpage.html">🗃️Start Page</a>
+      </div>
+      <div class="nav-right" id="profileMenu">
+        <button class="new-btn">+ New</button>
+        <button class="news-btn">📢</button>
+        <img
+          src="../image/profile.jpg"
+          alt="profile"
+          class="profile-img"
+          id="profileIcon"
+        />
+        <div class="dropdown" id="dropdownMenu">
+          <a href="https://pngtree.com/freepng/vector-picture-icon_4013511.html">Profile</a>
+          <button id="logout-btn">Log out</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Profile</h1>
+      <input type="text" id="profile-name" placeholder="Enter name">
+      <div class="photo-container">
+        <img src="#" alt="profile">
+        <h4>Photo</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, distinctio.</p>
+        <button type="submit">Upload photo</button>
+
+        <input type="url" name="" id="insagram-url" placeholder="Instagram homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="thread-url" placeholder="Thread homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="linkedin-url" placeholder="linkedIn Homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="facebook-url" placeholder="Facebook Homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="twitter-url" placeholder="Twitter Homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="pinterest-url" placeholder="Pinterest Homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="quora-url" placeholder="Quora Homepage URL">
+        <button type="submit">save</button>
+        <input type="url" name="" id="youtube-url" placeholder="YouTube Homepage URL">
+        <button type="submit">save</button>
+        
+      </div>
+
+    <h4>Two Factor Authentication</h4>
+    <label class="switch , profile-p">
+    <input type="checkbox">
+    <span class="slider"></span>
+    </label>
+    <p class="profile-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iste sunt tempora debitis mollitia rerum cupiditate ratione distinctio libero, id modi, laborum deleniti quasi aperiam dicta ipsum voluptatum accusamus. Debitis maxime, nte ex voluptates voluptatum libero! <span><a href="../T&C.html">Learn more.</a></span></p>
+
+    <h4>Delete your account</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur! Nihil in neque illum eum architecto, sed vel nisi cumque.</p>
+    <button  id="red" type="submit">Delete Account</button>
+    </div>
+
+    
+</label>
   </body>
 
-  <script type="module" src="./JS/auth.js"></script>
-  <script type="module" src="./JS/dashboard.js"></script>
+  <script type="module" src="../JS/auth.js"></script>
+  <script type="module" src="../JS/dashboard.js"></script>
+  <script type="module" src="../JS/profile.js"></script>
 </html>
