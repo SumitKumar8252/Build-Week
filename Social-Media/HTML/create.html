@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="../CSS/create.css">
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo-container">
+          <img id="logo" src="../image/logo.png" alt="logo" class="logo" />
+        </div>
+        <a href="../HTML/create.html">📝Create</a>
+        <a href="../HTML/publish.html">📜Publish</a>
+        <a href="../HTML/Trending.html">🔥Trending</a>
+        <a href="../HTML/startpage.html">🗃️Start Page</a>
+      </div>
+      <div class="nav-right" id="profileMenu">
+        <button id="new-post" class="new-btn">+ New</button>
+        <button class="news-btn">📢</button>
+        <img
+          src="../image/profile.jpg"
+          alt="profile"
+          class="profile-img"
+          id="profileIcon"
+        />
+        <div class="dropdown" id="dropdownMenu">
+          <a href="./HTML/profile.html">Profile</a>
+          <button id="logout-btn">Log out</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="board-container">
+        <h2>Ideas 💡</h2>
+        <div class="board-column">
+            <h3>Unassigned <span class="count">1</span></h3>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x100?text=One+Click" alt="One Click" class="card-img">
+                <h4>Save inspirations you find online with one click 😍</h4>
+                <p>Use ⬇️ Buffer browser extension to save Ideas from the Web. Highlight text or select an image and right click…</p>
+            </div>
+            <button class="new-idea-btn">+ New Idea</button>
+        </div>
+
+        <div class="board-column">
+            <h3>To Do <span class="count">1</span></h3>
+            <div class="card">
+                <h4>This is a place to plan ✍️ your content</h4>
+                <p>Save your Ideas before converting them into posts. Brainstorm, plan ahead, and refine! To find out more check out…</p>
+            </div>
+            <button class="new-idea-btn">+ New Idea</button>
+        </div>
+
+        <div class="board-column">
+            <h3>In Progress <span class="count">0</span></h3>
+            <button class="new-idea-btn">+ New Idea</button>
+        </div>
+    </main>
+</body>
+    <script type="module" src="./JS/auth.js"></script>
+    <script type="module" src="./JS/dashboard.js"></script>
+    <script type="module" src="../JS/create.js"></script>
+</html>

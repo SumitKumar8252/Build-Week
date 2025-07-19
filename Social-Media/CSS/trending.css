@@ -1,0 +1,173 @@
+:root {
+    --nav-color: #f3e6fa;               
+    --background-color: #f9f4fc;     
+    --aside-color: #eddaf8;            
+    --aside-hover: #f3e0fb;         
+    --button-nav: #9b30ff;           
+    --hover-color: #b060f0;             
+    --btn-hover: #b764f5;               
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-color);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--button-nav);
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--aside-hover);
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: var(--aside-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 1000;
+}
+
+.dropdown a,
+.dropdown button {
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+    color: var(--button-nav);
+    width: 100%;
+}
+
+.dropdown a:hover,
+.dropdown button:hover {
+    background-color: var(--aside-hover);
+}
+
+button.new-btn,
+button.news-btn {
+    background-color: var(--button-nav);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.new-btn:hover,
+button.news-btn:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+/* Container styling */
+.container {
+    background-color: var(--aside-color);
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 1.8em;
+    color: var(--button-nav);
+    margin-bottom: 20px;
+}
+
+/* Hashtags styling */
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hashtag {
+    background-color: var(--nav-color);
+    color: var(--button-nav);
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 2px solid var(--button-nav);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.95em;
+}
+
+.hashtag:hover {
+    background-color: var(--hover-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .nav-left, .nav-right {
+        gap: 5px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
+}

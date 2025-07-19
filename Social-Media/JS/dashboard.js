@@ -20,6 +20,16 @@ window.addEventListener("click", function (event) {
   }
 });
 
+// navbar new post button
+const newPost= document.getElementById('new-post')
+newPost.addEventListener('click', async()=>{
+  try {
+    window.location.href ="./HTML/NewPost.html" ;
+  } catch (error) {
+    alert(error.message);
+  }
+})
+
 
 //aside container
 const all= document.getElementById('all')
@@ -33,5 +43,7 @@ const quora= document.getElementById('quora')
 const youtube= document.getElementById('youtube')
 
 const sideInsta= instagram.addEventListener('click', async()=>{
+  let localdata= JSON.parse(localStorage.getItem('URL')) 
   
 })
+
