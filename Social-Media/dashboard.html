@@ -6,6 +6,7 @@
     <title>Social Bee Dashboard</title>
     <link rel="stylesheet" href="./CSS/dashboard.css" />
     <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon" />
+
     <!-- Reliable Font Awesome Free CDN -->
     <link
       rel="stylesheet"
@@ -19,10 +20,10 @@
         <div class="logo-container">
           <img src="./image/logo.png" alt="logo" class="logo" />
         </div>
-        <a href="#">Create</a>
-        <a href="#">Publish</a>
-        <a href="#">Trending #</a>
-        <a href="#">Start Page</a>
+        <a href="./HTML/create.html">📝Create</a>
+        <a href="./HTML/publish.html">📜Publish</a>
+        <a href="./HTML/Trending.html">🔥Trending</a>
+        <a href="./HTML/startpage.html">🗃️Start Page</a>
       </div>
       <div class="nav-right" id="profileMenu">
         <button class="new-btn">+ New</button>
@@ -33,6 +34,7 @@
           id="profileIcon"
         />
         <div class="dropdown" id="dropdownMenu">
+          <a href="./HTML/profile.html">Profile</a>
           <button id="logout-btn">Log out</button>
         </div>
       </div>
@@ -60,7 +62,7 @@
         <div class="header">
           <h1>All Channels</h1>
           <div class="header-buttons">
-            <button>List</button>
+            <button>📃List</button>
             <button>📆 Calendar</button>
             <button>+ New Post</button>
           </div>
@@ -72,22 +74,6 @@
         </div>
       </main>
     </div>
-
-    <script>
-      const profileIcon = document.getElementById("profileIcon");
-      const dropdownMenu = document.getElementById("dropdownMenu");
-
-      profileIcon.addEventListener("click", () => {
-        dropdownMenu.style.display =
-          dropdownMenu.style.display === "block" ? "none" : "block";
-      });
-
-      window.addEventListener("click", function (e) {
-        if (!document.getElementById("profileMenu").contains(e.target)) {
-          dropdownMenu.style.display = "none";
-        }
-      });
-    </script>
 
     <script type="module" src="./JS/auth.js"></script>
     <script type="module" src="./JS/dashboard.js"></script>

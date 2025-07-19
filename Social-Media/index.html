@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="shortcut icon" sizes="180x180" href="./image/logo.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link
+      rel="shortcut icon"
+      sizes="180x180"
+      href="./image/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="container1">
-            <h2>Login</h2>
-            <input type="email" id="login-email" placeholder="Enter email">
-            <input type="password" id="login-password" placeholder="Enter password">
-            <button id="login-btn">Login</button>
+      <div class="container1">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Enter email" />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Enter password"
+        />
+        <button id="login-btn">Login</button>
 
-            <p>Don't have an account? <a href="./signup.html">Create account</a></p>
-            
-            <footer> 
-                <p><a href="./T&C.html">Terms of Service</a> || <a href="#">Privacy Policy</a></p>
-            </footer>
-        </div>
-        <div class="container2">
-            <div class="box">
-                <h2>Welcome to Social bee !</h2>
-            </div>
-            <img src="./image/banner.jpg" alt="side-img">
-        </div>
+        <p>Don't have an account? <a href="./signup.html">Create account</a></p>
 
+        <footer>
+          <p>
+            <a href="./T&C.html">Terms of Service</a> ||
+            <a href="#">Privacy Policy</a>
+          </p>
+        </footer>
+      </div>
+      <div class="container2">
+        <div class="box">
+          <h2>Welcome to Social bee !</h2>
+        </div>
+        <img src="./image/banner.jpg" alt="side-img" />
+      </div>
     </div>
-</body>
-<script type="module" src="./JS/auth.js"></script>
+    <div id="videoOverlay">
+      <video id="loadingVideo" src="./video/loading.mp4" autoplay muted></video>
+    </div>
+  </body>
+  <script type="module" src="./JS/auth.js"></script>
+  <script type="module" src="./JS/dashboard.js"></script>
 </html>
