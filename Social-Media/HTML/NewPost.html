@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Post</title>
-</head>
-<body>
-    <h1>Create your own post</h1>
-</body>
+    <link rel="stylesheet" href="../CSS/NewPost.css" />
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo-container">
+          <img id="logo" src="../image/logo.png" alt="logo" class="logo" />
+        </div>
+        <a href="../HTML/create.html">📝Create</a>
+        <a href="../HTML/publish.html">📜Publish</a>
+        <a href="../HTML/Trending.html">🔥Trending</a>
+        <a href="../HTML/startpage.html">🗃️Start Page</a>
+      </div>
+      <div class="nav-right" id="profileMenu">
+        <button id="new-post" class="new-btn">+ New</button>
+        <button class="news-btn">📢</button>
+        <img
+          src="../image/profile.jpg"
+          alt="profile"
+          class="profile-img"
+          id="profileIcon"
+        />
+        <div class="dropdown" id="dropdownMenu">
+          <a href="./HTML/profile.html">Profile</a>
+          <button id="logout-btn">Log out</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="overlay">
+      <div class="modal">
+        <h2>Create Post</h2>
+        <div class="social-icons">
+          <div class="icon"><i class="fab fa-x-twitter"></i></div>
+          <div class="icon"><i class="fab fa-facebook-f"></i></div>
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="icon"><i class="fab fa-tiktok"></i></div>
+        </div>
+        <div class="tag-container">
+          <input type="text" id="tagInput" placeholder="Search or create tag" />
+          <div id="tagResults"></div>
+        </div>
+        <div class="post-area">
+          <textarea
+            placeholder="Start writing or use the AI Assistant"
+          ></textarea>
+        </div>
+        <div class="upload-box">
+          <label for="fileInput">
+            Drag & drop or <span class="select-file">select a file</span>
+          </label>
+          <input type="file" id="fileInput" hidden />
+        </div>
+        <button id="connectBtn">Connect a Channel to Post</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="../JS/NewPost.js"></script>
 </html>

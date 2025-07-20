@@ -6,9 +6,39 @@
 
 ---
 
+## Project Type
+Frontend | Backend  
+
+---
+
 ## 🎯 Project Goal
 
 To empower social media managers with a **single platform to manage, schedule, and analyze social media content**, ensuring campaigns run smoothly while maximizing audience engagement across all channels.
+
+---
+
+## Structure
+Social-Media
+|___CSS
+|___HTML
+|___JS
+|  |__auth.js
+|  |__create.js
+|  |__dashboard.js
+|  |__NewPost.js
+|  |__profile.js
+|
+|___video
+|___dashboard.html
+|___firebase-config.js
+|___index.html
+|___signup.html  
+|___T&C.html
+
+---
+
+## 🚀 Live Server
+-   (...URL)
 
 ---
 
@@ -24,10 +54,6 @@ To empower social media managers with a **single platform to manage, schedule, a
 
 ✅ **Trending Hashtag Suggestions**  
 - Get platform-tailored, trending hashtag recommendations to maximize post reach and engagement.
-
-✅ **Detailed Analytics Dashboard**  
-- Track likes, comments, shares, click-through rates, and follower growth.  
-- Gain insights into audience preferences and post performance.
 
 ✅ **Collaborative Content Creation**  
 - Assign tasks, set deadlines, and review drafts with your team before publishing.
@@ -53,6 +79,11 @@ To empower social media managers with a **single platform to manage, schedule, a
 
 ---
 
+## Credentials
+-  You can easyily create your own account, through sign up.
+
+---
+
 ## 📈 Benefits
 
 - **Save Time:** Automate repetitive tasks while ensuring consistent posting.  
@@ -62,35 +93,3 @@ To empower social media managers with a **single platform to manage, schedule, a
 - **Maximize Reach:** Multi-platform management and resharing keep content active and visible.
 
 ---
-
-## 🚀 Tech Stack (Example)
-
-
----
-
-## 📸 Screenshots
-
-| Dashboard View | Content Calendar | Analytics Dashboard |
-
-| ![Dashboard](assets/dashboard.png) | ![Calendar](assets/calendar.png) | ![Analytics](assets/analytics.png) |
-
----
-
-## Structure
-Social-Media
-|___CSS
-|___JS
-|  |__auth.js
-|
-|___dashboard.html
-|___firebase-config.js
-|___index.html
-|___signup.html  
-
----
-
-## 🚀 Live Server
--   (...URL)
-
----
-

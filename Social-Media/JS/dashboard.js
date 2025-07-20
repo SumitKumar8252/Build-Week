@@ -29,6 +29,16 @@ newPost.addEventListener('click', async()=>{
     alert(error.message);
   }
 })
+const newPosts= document.getElementById('new-posts')
+newPosts.addEventListener('click', async()=>{
+  try {
+    window.location.href="./HTML/NewPost.html";
+
+    
+  } catch (error) {
+    alert(error.message)
+  }
+})
 
 
 //aside container
