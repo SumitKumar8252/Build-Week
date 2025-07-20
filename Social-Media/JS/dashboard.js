@@ -53,7 +53,33 @@ const quora= document.getElementById('quora')
 const youtube= document.getElementById('youtube')
 
 const sideInsta= instagram.addEventListener('click', async()=>{
-  let localdata= JSON.parse(localStorage.getItem('URL')) 
-  
+  window.location.href= "https://www.instagram.com/accounts/login/?next=httpswww.instagram.comnandokaab&is_from_rle" 
 })
 
+const sideThread= thread.addEventListener('click', async()=>{
+  window.location.href= "https://www.threads.com/login" 
+})
+
+const sideLinkedin= linkedin.addEventListener('click', async()=>{
+  window.location.href= "https://api.linkedin.com/login" 
+})
+
+const sideFacebook= facebook.addEventListener('click', async()=>{
+  window.location.href= "https://www.facebook.com/login/" 
+})
+
+const sideTwitter= twitter.addEventListener('click', async()=>{
+  window.location.href= "https://x.com/i/flow/login" 
+})
+
+const sidePintrest= pintrest.addEventListener('click', async()=>{
+  window.location.href= "https://www.pinterest.com/login/" 
+})
+
+const sideQuora= quora.addEventListener('click', async()=>{
+  window.location.href= "https://www.pinterest.com/login/" 
+})
+
+const sideYoutube= youtube.addEventListener('click', async()=>{
+  window.location.href= "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Faccount%253Fhl%253Did%26feature%3Dredirect_login&hl=en&ifkv=AdBytiP3XotksY9eCFQCWxn-NDetS5x_98-I-KRuKRNTmvEQZu3TM4JC2grVz3mrHDJr9nvDnlkjmw&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1793214472%3A1753027699916294" 
+})
