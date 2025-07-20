@@ -38,7 +38,7 @@ Social-Media
 ---
 
 ## 🚀 Live Server
--   (...URL)
+-   https://build-week-nine.vercel.app/index.html
 
 ---
 
