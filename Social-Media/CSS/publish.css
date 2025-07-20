@@ -136,3 +136,46 @@ body {
     background: var(--aside-hover);
 }
 
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.empty-state {
+    text-align: center;
+    color: #2d2d2d;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e4fc1;
+}
